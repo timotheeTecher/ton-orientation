@@ -1,0 +1,33 @@
+@import "../../../Sass/Themes/ton-orientation.scss";
+@import "../../../Sass/Utils/mixins.scss";
+
+.Button {
+  margin: 5px;
+  padding: 0 15px;
+  height: 40px;
+  @include flex-aic-jcse;
+  background-color: $sky-blue-color;
+  border: 2px solid $primary-color;
+  border-radius: 4px;
+  color: $white-color;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight-bold;
+  cursor: pointer;
+  &.outlined {
+    color: $primary-color;
+    background: none;
+    border: 2px solid $primary-color;
+  }
+  &__startIcon {
+    @include flex-total-center;
+    margin-right: 12px;
+  }
+  &__label {
+    padding-bottom: 2px;
+  }
+  &__endIcon {
+    @include flex-total-center;
+    margin-left: 12px;
+  }
+}
